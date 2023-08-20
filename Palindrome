@@ -1,0 +1,14 @@
+function palindrome(word){
+   let usual =word;
+  let rever= word.split("").reverse().join("") ;
+  
+  let allResult=[];
+  //console.log("usual:",usual);
+ // console.log("reverse", rever);
+  if(usual === rever){
+    return true;
+  }else{return false;}  
+}
+
+console.log("palindrome:",palindrome("mem"));
+console.log("palindrome:",palindrome("memm"));
