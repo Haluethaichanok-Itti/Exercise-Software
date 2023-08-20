@@ -1,0 +1,14 @@
+//Find largest element in an array
+const array = [6, 1, -50, 200, 7, 9, -13, 20];
+ let positiveNum= [];
+
+for(let i = 0; i< array.length; i++){
+ if(array[i]>=0){
+   positiveNum.push(array[i]);
+ }
+}
+
+positiveNum.sort(function(a,b){return a-b});
+//console.log("positiveNum:",positiveNum);
+let ans = positiveNum[positiveNum.length-1];
+console.log("ans:",ans);
