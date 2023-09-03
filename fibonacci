@@ -1,0 +1,10 @@
+function fib(n) {
+  //φคืออัตราส่วนทองคำ = (1 + √ 5) / 2 ≈ 1.61803399 
+    let phi = (1 + Math.sqrt(5))/2;
+  //Fn เป็นจนใเต็มที่ใกล้ (φ^n)/ √ 5
+    let asymp = Math.pow(phi, n) / Math.sqrt(5);
+
+    return Math.round(asymp);
+}
+
+console.log(fib(12)); 
