@@ -4,5 +4,5 @@ const array = [6, 1, -50, 200, 7, 9, -13, 20];
 
 array.sort(function(a,b){return a-b});
 console.log("array",array);
-let ans = array[array.length-1];
+let ans = Math.max(...array);
 console.log("ans:",ans);
