@@ -1,5 +1,6 @@
 function palindrome(word){
    let usual =word;
+//แยก string ลงใน array ของ string แล้ว reverse แล้ว join ใหม่
   let rever= word.split("").reverse().join("") ;
   
   let allResult=[];
